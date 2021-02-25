@@ -146,14 +146,14 @@ body{
         min-height: 100vh;
     }
     .top-side{
-        height: 35%;
+        height: 40%;
         h1{
-            padding: 5% 0;
+            padding: 7% 0;
             font-size: 24px;
         }
         .search-bar{
             width: 90%;
-            height: 25%;
+            height: 24%;
             position: relative;
             input{
                 border-radius: 15px;
@@ -169,6 +169,8 @@ body{
         height: 80%;
         bottom: -40%;
         flex-direction: column;
+        width: 90%;
+        padding: 5% 0;
         .details-section{
             border-right: none;
             .detail-name{
@@ -176,10 +178,13 @@ body{
                 text-align: center;
                 font-size: 10px;
             }
+            .detail{
+                font-size: 18px;
+            }
         }
     }
     #mapid{
-        height:65%;
+        height:60%;
     }
     .loader{
         margin-left: 22%;
