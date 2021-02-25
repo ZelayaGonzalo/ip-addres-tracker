@@ -1,3 +1,11 @@
+function setHeigth(){
+    let viewport = document.getElementById('viewport-meta')
+    let viewheight = window.innerHeight
+    let viewwidth = window.innerWidth
+    viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
+    console.log('viewport')
+}
+
 const locationDOM = document.getElementById('location')
 const timezone  = document.getElementById('timezone')
 const ipAddress = document.getElementById('ip-adress')
@@ -14,6 +22,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoiMHB0MWMwIiwiYSI6ImNrbGp0Znp1djBtYWkybm13c2o4cDFudDYifQ.FwDwxesRh_rVNv8u8240rA'
 }).addTo(mymap);
+
+setHeigth()
 
 var locationIcon = L.icon({
     iconUrl : './images/icon-location.svg',
